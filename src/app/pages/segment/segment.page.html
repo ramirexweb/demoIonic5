@@ -27,5 +27,19 @@
     </ion-item>
   </ion-list>
 
+  <ion-list *ngIf="!superHeroes">
+    <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1]" class="animated flash slow infinite">
+      <ion-label>
+        <h3>
+          <ion-skeleton-text width="70%"></ion-skeleton-text>
+        </h3>
+        <p><ion-skeleton-text width="100%"></ion-skeleton-text></p>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-right">
+        <ion-skeleton-text width="10%"></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
 
 </ion-content>
